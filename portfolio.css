@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Navbar */
+nav{
+    background:#222;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Home */
+#home{
+    background:linear-gradient(to right,#2193b0,#6dd5ed);
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+#home h1{
+    font-size:45px;
+}
+
+#home p{
+    margin-top:10px;
+    font-size:20px;
+}
+
+/* Section */
+section{
+    padding:50px 20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+}
+
+/* About */
+.about{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* Cricketer Cards */
+
+.title{
+    text-align:center;
+    color:#0d2d6c;
+    margin-bottom:30px;
+    font-size:45px;
+}
+
+.player-card{
+    width:100%;
+    max-height: 120%;
+    background:#eef5ff;
+    border-radius:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 40px;
+    margin-bottom:25px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.content{
+    width:60%;
+}
+
+.content h2{
+    color:#0d47a1;
+    margin-bottom:10px;
+    font-size:35px;
+}
+
+.content p{
+    margin:8px 0;
+    font-size:20px;
+    line-height:1.6;
+}
+
+.image{
+    width:35%;
+    text-align:right;
+}
+
+.image img{
+    width:350px;
+    height:350px;
+    border-radius:20%;
+    object-fit:cover;
+    border:5px solid white;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+.player-card{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.content{
+    width:100%;
+}
+
+.image{
+    width:100%;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.image img{
+    width:250px;
+    height:250px;
+}
+}
+
+/* Mission */
+.mission{
+    background:#fff;
+}
+
+.mission ul{
+    max-width:700px;
+    margin:auto;
+    line-height:2;
+}
+
+/* Contact */
+.contact{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+.contact p{
+    margin:10px 0;
+}
